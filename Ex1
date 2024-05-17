@@ -1,0 +1,24 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro n, div
+
+		escreva("Digite o numero e veja quais numeros sao primos antes dele: ")
+		leia(n)
+
+		para(inteiro x=0; x<=n; x++){
+			div = 0
+			para(inteiro i=1; i<=x; i++){
+				se(x % i ==0){
+					div++
+				}
+			}
+			se(div == 2){
+				escreva("\n", x)
+			}
+			
+		}
+	}
+}
