@@ -1,0 +1,38 @@
+programa
+{
+    funcao inicio()
+    {
+        inteiro vetor1[10]
+        inteiro vetor2[10]
+        
+        para (inteiro i = 0; i < 10; i++)
+        {
+            escreva("Digite o elemento ", i, " do vetor1: ")
+            leia(vetor1[i])
+        }
+        
+        para (inteiro i = 0; i < 10; i++)
+        {
+            se (i % 2 == 0)
+            {
+                vetor2[i] = vetor1[i] * 5
+            }
+            senao
+            {
+                vetor2[i] = vetor1[i] + 5
+            }
+        }
+        
+        escreva("numero do vetor1:\n")
+        para (inteiro i = 0; i < 10; i++)
+        {
+            escreva("vetor1[", i, "] = ", vetor1[i], "\n")
+        }
+        
+        escreva("numero do vetor2:\n")
+        para (inteiro i = 0; i < 10; i++)
+        {
+            escreva("vetor2[", i, "] = ", vetor2[i], "\n")
+        }
+    }
+}
