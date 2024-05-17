@@ -1,0 +1,35 @@
+programa
+{
+    funcao inicio()
+    {
+        cadeia senhaCorreta = "1234"
+        cadeia senhaDigitada
+        inteiro tentativas = 3
+        
+        faca
+        {
+            escreva("Digite a senha: ")
+            leia(senhaDigitada)
+            
+            se (senhaDigitada == senhaCorreta)
+            {
+                escreva("Acesso Permitido.\n")
+                pare
+            }
+            senao
+            {
+                tentativas = tentativas - 1
+                escreva("Senha Incorreta\n")
+                se (tentativas > 0)
+                {
+                    escreva("Restam ", tentativas, " tentativas\n")
+                }
+            }
+        } enquanto (tentativas > 0)
+        
+        se (tentativas == 0)
+        {
+            escreva("Senha Bloqueada\n")
+        }
+    }
+}
